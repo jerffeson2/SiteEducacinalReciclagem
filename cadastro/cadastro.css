@@ -1,0 +1,127 @@
+/* Configuração geral para layout */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0; /* Cor de fundo da página */
+}
+
+/* Cabeçalho fixo no topo */
+header {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50; /* Cor de fundo do cabeçalho */
+  color: white; /* Cor do texto no cabeçalho */
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 2em; /* Tamanho do texto do cabeçalho */
+  color: #fff; /* Cor do texto do cabeçalho */
+  margin: 20px 0; /* Espaçamento do título */
+}
+
+/* Seção do formulário centralizada com espaço abaixo do cabeçalho */
+.form-section {
+  width: 100%;
+  max-width: 400px; /* Largura máxima do formulário */
+  padding: 20px;
+  background-color: #ffffff; /* Fundo branco para o formulário */
+  border-radius: 8px; /* Cantos arredondados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  text-align: center; /* Centraliza o texto dentro do formulário */
+  margin: 80px auto 20px; /* Espaço no topo para o cabeçalho fixo */
+}
+
+.form-section h2 {
+  margin-bottom: 20px; /* Espaço abaixo do título do formulário */
+  color: #4CAF50; /* Cor do título do formulário */
+}
+
+/* Grupo de formulário */
+.form-group {
+  margin-bottom: 15px; /* Espaço abaixo de cada grupo de formulário */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+label {
+  font-weight: bold; /* Destaca o texto do rótulo */
+  display: block; /* Faz com que o rótulo ocupe uma linha completa */
+  margin-bottom: 5px; /* Espaço abaixo do rótulo */
+}
+
+/* Estilização dos campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%; /* Largura total */
+  padding: 8px; /* Espaçamento interno */
+  border: 1px solid #ccc; /* Borda cinza clara */
+  border-radius: 4px; /* Cantos arredondados */
+}
+
+/* Botão de envio */
+button {
+  width: 100%; /* Largura total */
+  padding: 10px; /* Espaçamento interno */
+  background-color: #4CAF50; /* Cor do botão */
+  color: white; /* Cor do texto do botão */
+  border: none; /* Sem borda */
+  border-radius: 4px; /* Cantos arredondados */
+  cursor: pointer; /* Muda o cursor ao passar o mouse */
+  font-size: 16px; /* Tamanho da fonte */
+  margin-top: 10px; /* Espaço acima do botão */
+}
+
+button:hover {
+  background-color: #45a049; /* Cor ao passar o mouse */
+}
+
+/* Seção "Voltar ao Início" */
+.back-to-home {
+  text-align: center; /* Centraliza o botão "Voltar ao Início" */
+  margin-top: 20px; /* Espaço acima do botão */
+}
+
+.back-button {
+  text-decoration: none; /* Remove sublinhado */
+  color: #fff; /* Cor do texto do botão */
+  background-color: #4CAF50; /* Cor de fundo do botão */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  border-radius: 5px; /* Cantos arredondados */
+  font-size: 1em; /* Tamanho da fonte */
+  transition: background-color 0.3s ease; /* Efeito de transição */
+}
+
+.back-button:hover {
+  background-color: #66bb6a; /* Cor ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+  margin-top: auto; /* Faz com que o rodapé fique no fundo */
+  padding: 10px;
+  text-align: center;
+  background-color: #4CAF50; /* Cor do rodapé */
+  color: white; /* Cor do texto do rodapé */
+}
+
+/* Estilos para a área de mensagens */
+#mensagem {
+  margin-top: 20px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}

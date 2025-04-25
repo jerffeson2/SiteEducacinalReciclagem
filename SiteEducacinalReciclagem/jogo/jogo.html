@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo de Reciclagem</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <div id="game">
+    <h1>Separe o Lixo!</h1>
+    <button id="toggle-music">Iniciar Música</button>
+    <div id="level-display">Nível: <span id="currentLevel">1</span></div>
+    <div id="items"></div>
+    <div id="bins"></div>
+    <div id="score">
+      <div id="feedback-container"></div>
+      <h2>Pontuação: <span id="points">0</span></h2>
+    <!-- Bolhas animadas -->
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+  </div>
+  </div>
+
+  <!-- Elementos de áudio -->
+  <audio id="correct-sound" src="correct.mp3" preload="auto"></audio>
+  <audio id="incorrect-sound" src="incorrect.mp3" preload="auto"></audio>
+
+  <audio id="background-music" loop>
+    <source src="sons/sonfundo.mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+</audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

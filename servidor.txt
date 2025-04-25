@@ -1,0 +1,4 @@
+
+Abra o terminal no VS Code e execute o servidor PHP:
+
+php -S localhost:8000

@@ -1,0 +1,116 @@
+/* Configuração geral para layout */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif; /* Fonte padrão */
+}
+
+/* Cabeçalho fixo no topo */
+header {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto no cabeçalho */
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 2em; /* Tamanho do texto do cabeçalho */
+    color: #fff; /* Cor do texto do cabeçalho */
+    margin: 20px 0; /* Espaçamento do título */
+}
+
+/* Seção do formulário */
+.form-section {
+    margin-top: 80px; /* Espaço abaixo do cabeçalho fixo */
+    padding: 20px;
+    background-color: white; /* Fundo branco para o formulário */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    max-width: 400px; /* Largura máxima do formulário */
+    margin-left: auto; /* Centralizar horizontalmente */
+    margin-right: auto; /* Centralizar horizontalmente */
+}
+
+.form-section h2 {
+    text-align: center; /* Centraliza o título do formulário */
+}
+
+.form-section label {
+    display: block; /* Faz com que o rótulo ocupe uma linha completa */
+    margin-bottom: 5px; /* Espaço abaixo do rótulo */
+}
+
+.form-section input[type="email"],
+.form-section input[type="password"] {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaço abaixo do campo */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 4px; /* Cantos arredondados */
+}
+
+.form-section button {
+    width: 100%; /* Largura total */
+    padding: 10px;
+    background-color: #4CAF50; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Sem borda */
+    border-radius: 4px; /* Cantos arredondados */
+    cursor: pointer; /* Cursor em forma de mão ao passar */
+    font-size: 1em; /* Tamanho da fonte */
+}
+
+.form-section button:hover {
+    background-color: #45a049; /* Cor ao passar o mouse */
+}
+
+/* Seção "Voltar ao Início" */
+.back-to-home {
+    text-align: center; /* Centraliza o botão "Voltar ao Início" */
+    margin-top: 20px; /* Espaço acima do botão */
+}
+
+.back-button {
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 10px 15px; /* Espaçamento */
+    border: none; /* Sem borda */
+    border-radius: 4px; /* Cantos arredondados */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.back-button:hover {
+    background-color: #45a049; /* Cor ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    margin-top: auto; /* Faz com que o rodapé fique no fundo */
+    padding: 10px;
+    text-align: center;
+    background-color: #4CAF50; /* Cor do rodapé */
+    color: white; /* Cor do texto do rodapé */
+}
+
+/* Estilos para a área de mensagens */
+.form-section div {
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}

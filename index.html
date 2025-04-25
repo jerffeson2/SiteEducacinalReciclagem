@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação Ambiental Divertida</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="enviar_contato.css">
+   
+</head>
+<body>
+    <header>
+        <h1>Educação Ambiental Divertida</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="cadastro/cadastro.html" class="cadastro-link">Cadastro</a></li>
+                <li><a href="login/login.html" class="login-link">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Aprenda a separar o lixo brincando!</h2>
+            <p>No mundo de hoje, aprender a cuidar do meio ambiente é mais importante do que nunca. Por isso, desenvolvemos um jogo educativo pensado especialmente para crianças, com o objetivo de ensinar a importância da separação correta do lixo de uma maneira divertida e interativa.</p>
+            <p>Neste jogo, os pequenos jogadores terão a missão de separar diferentes tipos de resíduos, como plástico, papel, vidro e orgânicos, e depositá-los nas lixeiras corretas. Cada fase apresenta desafios que aumentam gradualmente, incentivando as crianças a pensar de forma crítica sobre o descarte de resíduos à medida que progridem no jogo.</p>
+        </div>
+        <div class="hero-image">
+            <img src="imagens_site/recycling_kids.png" alt="Crianças separando lixo">
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h2>Por que separar o lixo é tão importante?</h2>
+        <p>A separação adequada do lixo é um passo essencial para reduzir a quantidade de resíduos que vão para os aterros sanitários, ajudando a preservar o meio ambiente e a garantir que os materiais recicláveis sejam reaproveitados de forma eficiente. Além disso, ensina as futuras gerações sobre a importância da sustentabilidade e como pequenas ações no dia a dia podem fazer uma grande diferença no planeta.</p>
+        <p>Ao jogar nosso game, as crianças não apenas aprendem, mas se tornam agentes de transformação, aplicando esses conhecimentos na vida real e contribuindo para um futuro mais limpo e sustentável.</p>
+        <div class="icons">
+            <div class="icon">
+                <img src="imagens_site/earth_icon.png" alt="Ícone do planeta Terra">
+                <p>Preservar o meio ambiente</p>
+            </div>
+            <div class="icon">
+                <img src="imagens_site/recycle_icon.png" alt="Ícone de reciclagem">
+                <p>Reduzir resíduos</p>
+            </div>
+            <div class="icon">
+                <img src="imagens_site/sustainability_icon.png" alt="Ícone de sustentabilidade">
+                <p>Sustentabilidade</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="jogar" class="play-now">
+        <h2>Venha jogar e aprender!</h2>
+        <p>Nosso jogo foi desenvolvido para ser fácil de jogar em qualquer navegador, sem a necessidade de downloads. Queremos convidar você e seus filhos a jogar e aprender sobre a importância da reciclagem enquanto se divertem!</p>
+         <!-- Embutindo o jogo através de um iframe -->
+         <div class="img-container">
+            <img src="imagens_site/imagem_do_jogo.png" alt="Jogo" class="img-jogo">
+            <div class="img-hover-text">Jogo</div>
+        </div>        
+         <a href="jogo/jogo.html" class="btn-play-big" target="_blank">Clique aqui para jogar!</a>
+    </section>
+    <script src="texto_jogo.js"></script>
+
+    <!-- Seção de Contato -->
+    <section class="contato-section">
+        <h2>Entre em Contato</h2>
+        <div class="form-container">
+            <form id="contatoForm" action="enviar_mensagem.php" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Jogo de Reciclagem. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="enviar_contato.js"></script>
+</body>
+</html>
